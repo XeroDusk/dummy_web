@@ -8,7 +8,7 @@ body {
 
 header {
     display: flex;
-    flex: 1;
+
     flex-direction: column;
     background-color: #1f2937;
     padding: 0px 80px;
@@ -43,14 +43,17 @@ a {
 .about {
     display:flex;
     justify-content: space-between;
-    flex: 1;
-    gap: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex: 1 0 auto ;
 }
 
 .about-text {
     padding: 0;
     margin: 0;
+    flex-grow: 1;
     line-height: 1;
+    width: 300px;
 }
 
 .about #h3 {
@@ -79,4 +82,56 @@ button {
     border: none;
     border-radius: 5px;
     font-size: 16px;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#h4 {
+    font-family: "Hero New ExtraBold";
+    font-size: 32px;
+    color: #1f2937;
+    padding: 40px 80px;
+}
+
+.images ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.images li {
+    width: 150px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.images img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+
+.quote {
+    background-color: #e5e7eb ;
+    font-family: "Hero New Light";
+    font-size: 28px;
+    padding: 80px 100px;
+    line-height: 1;
+}
+
+.quote #said {
+    font-family: "Hero New SemiBold";
+    font-size: 15px;
+    text-align: end;
+    font-weight: bolder;
 }
